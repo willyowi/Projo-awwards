@@ -29,10 +29,10 @@ An App that mimics the infamous awwwards for project posting, reviews and rating
 ## Rate 
 ### Rate a projrct that you clicked on
 ![screenshot](aww/static/photos/rate.png)
-<!-- 
+
 ## Upload 
 ### Upload your project for  other users
-![screenshot](aww/static/photos/upload.png) -->
+![screenshot](aww/static/photos/upload.png)
 
 
 
