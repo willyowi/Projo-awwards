@@ -117,6 +117,7 @@ class Review(models.Model):
     content = models.IntegerField(choices=REVIEW_CHOICES,default=0,blank=False)
     average =  models.DecimalField(default=1,blank=False,decimal_places=2,max_digits=40)
     project = models.ForeignKey(Project,null=True,on_delete=models.CASCADE)
+    # timestamp
     timestamp = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User,null=True,blank=True)
 
