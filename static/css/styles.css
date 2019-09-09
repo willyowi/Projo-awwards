@@ -1,9 +1,9 @@
 .circle-wrapper {
-  $size: 200px;
-  $animation-time: 3.33s;
+  size: 200px;
+  animation-timing-function: ;
 
-  $background-color: #f7f9fc;
-  $circle-color: #5ca7ff;
+  background-color: #f7f9fc;
+  circle-color: #5ca7ff;
 
   position: relative;
 
@@ -32,13 +32,13 @@
       height: 50%;
     }
 
-    // First half (top) of the cirlce with a left to right gradient
+  
     &:before {
       border-radius: $size $size 0 0;
       background-image: linear-gradient(to right, rgba($circle-color, .5), $circle-color);
     }
 
-    // Second half (bottom)
+    
     &:after {
       top: 50%;
 
@@ -54,7 +54,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
 
-    // Adjust values below to change border-size
+    
     height: 90%;
     width: 90%;
 
@@ -115,10 +115,10 @@ margin-bottom:80px;
   border: 4px double #F3176E;
 }
   .far:hover{
-    color;#2984D0;
+    color:#2984D0;
   }
 
-}
+
 
 #navbarrr{
   /* #00A3B4 */
