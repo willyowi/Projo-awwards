@@ -17,11 +17,13 @@
   bottom: 0;
   left: 50%;
   right: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+  background: whitesmoke;
+  opacity: 0.7;
   overflow: hidden;
-  width: 0;
+  width: 0%;
   height: 100%;
-  transition: .7s ease;
+  transition: .4s ease;
 }
 
 .img-cont:hover .overlay {
@@ -70,7 +72,7 @@
               <img class="card-img-top mb-10 img-responsive i-images" src="{{project.image.url}}" style="height:260px;width:100%;">
               <div class="overlay">
               <div class="text">{{project.title}}</div>
-              <div class="details"><a href="{% url 'projectdetails' id=project.id %}" class="btn btn-info">View & Rate</a></div>
+              <div class="details" style="text-align: center"><a href="{% url 'projectdetails' id=project.id %}" class="btn btn-info">View & Rate&#128541 </a><br> If you like It</div>
     </div>
             </div>
 
@@ -91,17 +93,7 @@
     </div>
 
       </div>
-      <!-- {% for project in projects %}
-      <img src="{{project.image.url}}"> {{project.title}} <br> {{project.description | safe}} <br>
-
-
-      <a href="{{project.link}}" target="_blank">Site</a>
-      <br>
-
-
-      <br>
-      <br> {% endfor %} -->
-      <!-- <div class="col-md-3"></div> -->
+     
       {% endfor %}
     </div>
   </div>
