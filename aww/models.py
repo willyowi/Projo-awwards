@@ -125,7 +125,7 @@ class Review(models.Model):
 
     def __str__(self):
         return self.user
-
+# saving and deletring the choices
     def save_review(self):
         self.save()
 
