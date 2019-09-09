@@ -12,6 +12,7 @@ class ProfileTestClass(TestCase):
         test case for profiles
         '''
         self.user = User(username='tony')
+        # save user
         self.user.save()
         self.profile = Profile(photo='black and white',bio='test bio',contact="abc@xyz.com",user=self.user)
         self.profile.save_profile()
