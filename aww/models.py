@@ -11,8 +11,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class Profile(models.Model):
     photo = models.ImageField(upload_to='profpics/',default='NO IMAGE')
     bio = HTMLField()
-    # bio = models.CharField(max_length=60,blank=True)
-    # user = models.ForeignKey(User, null=True)
+    
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile",primary_key=True)
     contact = models.CharField(max_length=60,blank=True)
     # timestamp = models.DateTimeField(auto_now_add=True)
