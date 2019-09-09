@@ -23,7 +23,7 @@ class ProfileTestClass(TestCase):
 
     def test_instance(self):
         self.assertTrue(isinstance(self.profile,Profile))
-# saving profile
+           # saving profile
     def test_save_method(self):
         self.profile.save_profile()
         profiles = Profile.objects.all()
