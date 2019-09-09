@@ -1,0 +1,190 @@
+
+{% load bootstrap4 %}
+{% load static %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+ <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<header class="header" >
+ <nav class="navbar fixed-top" id="navbarr" style="background-color: brown">
+<div class="container">
+  <div>
+    <a href="{% url 'profile' username=user %}"><ion-icon name="contact" class="ionic"></ion-icon></a><br>
+    <a href="/logout" style="color: white"></ion-icon>Logout</a>
+
+  </div>
+    <section class="logo-section"><a href="{% url "index" %}"><img class="logo" src="/static/photos/matuzo.png"  style="width:250px;height:60px;"alt="/></a>
+      <a href="{% url "index" %}"><img class="logoname"/></a>
+    </section><br><br>
+
+
+    <form class="navbar-form" role="search" action="{% url 'search' %}" style="width:auto">
+
+       <div class="input-group">
+         <div>
+
+           <input type="text" class="form-control" placeholder="Search Projects by title" name="title" style="height:38px;">
+           <a href="{% url "add_project"%}" style="color: white"></ion-icon>Upload++</a>
+
+         </div>
+         <!-- <div class="input-group-btn">
+         </div> -->
+       </div>
+
+     </form>
+    <section class="icons-section" >
+
+
+      <!-- <a href="{% url "add_project"%}"><ion-icon name="add" class="ionic"></ion-icon></a> -->
+      <!-- <a class="nav-link open-nav" href="{% url 'profile' username=user %}"> -->
+
+
+
+
+      <!-- <a href="/logout"><ion-icon name="log-out" class="ionic"></ion-icon></a> -->
+
+</section>
+    </div>
+  </nav>
+</header>
+
+<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+
+
+
+
+
+<!-- {% load bootstrap4 %}
+{% load static%}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top opaque-navbar" id="navMain">
+    <div class="container navmarg">
+        <a class="smooth-scroll" href="/home"> <img src="{% static 'images/logo.png' %}" alt="" class="ig-logo"> <img src="{% static 'images/instagram.png' %}"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 nav-search">
+                        <form class="form-inline my-2 my-lg-0" role="search" action="">
+                            <input class="form-control my-2 my-sm-0 search-input" name="username" type="search" placeholder="&#xf3ee; Search Users" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link open-nav" href="" >
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p> Upload Image  </p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link open-nav" href="#">
+                        <i class="far fa-heart"></i>
+                        <p> Discover People </p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link open-nav" href="">
+                        <i class="far fa-user show"></i>
+                        <p> Profile </p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link open-nav" data-toggle="modal" data-target="#settings">
+                        <i class="fas fa-th"></i>
+                        <p> Settings </p>
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <ul class="list-group">
+                <li class="list-group-item text-center"><a href="/accounts/password/change">Change Password</a></li>
+                <li class="list-group-item text-center"><a href="/logout/">Log Out</a></li>
+                <li class="list-group-item text-center"><a data-dismiss="modal">Cancel</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-inverse bg-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">Instagram</a>
+    </div>
+
+    <div class="col-sm-4 col-md-4 navbar-right">
+
+        <form class="navbar-form" role="search" action="">
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Article" name="article">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    <div>
+
+            <ul>
+              <li class="dropdown" style="list-style:none;">
+                <a href="#" class="dropdown-toggle btn btn-dark" data-toggle="dropdown" role="button" aria-expanded="false">Account
+                          <span class="caret"></span>
+                      </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="">Create Article</a>
+                  </li>
+                  <li>
+                    <a href="/accounts/password/change">Change Password</a>
+                  </li>
+                  <li>
+                    <a href="/logout">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+  </div>
+</nav>
+</body>
+</html> -->

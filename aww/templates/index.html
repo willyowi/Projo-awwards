@@ -1,0 +1,110 @@
+{%extends 'base.html'%} {% load static %} {% load bootstrap4 %} {% block content %}
+<style>
+.i-images{
+  width:100%;
+  height:200px;
+  margin:2%;
+  border-radius: 1.2%;
+  border: 4px double grey;
+}
+*{
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .7s ease;
+}
+
+.img-cont:hover .overlay {
+  width: 100%;
+  left: auto;
+  margin-left:20px
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.details {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+</style>
+<!-- {{message}} -->
+<div class="projects" style="margin-top:120px;">
+
+  <div class="container">
+    <div class="row">
+        {% for project in projects %}
+      <div class="col-sm-12 col-md-6 col-lg-4">
+
+    <div class="card" style="height:360px;margin-bottom:10px;">
+      <div class="card-body">
+        <!-- <a href="{{project.link}}"> -->
+          <a href="{% url 'projectdetails' id=project.id %}">
+            <div class="img-cont">
+              <img class="card-img-top mb-10 img-responsive i-images" src="{{project.image.url}}" style="height:260px;width:100%;">
+              <div class="overlay">
+              <div class="text">{{project.title}}</div>
+              <div class="details"><a href="{% url 'projectdetails' id=project.id %}" class="btn btn-info">View & Rate</a></div>
+    </div>
+            </div>
+
+          </a>
+
+        <!-- </a> -->
+
+<br>
+        <p style="font-size:16px;">By : {{project.user | upper}} <span style="float:right;font-size:16px;">{{project.timestamp | date:"D, d-m-Y"}}</span></p>
+          <!-- <a href="{% url 'review' project_id=project.id%}" class="btn btn-info btn-block" style="margin-top:4px;border-radius:20%;">Rate</a> -->
+          <!-- <span style="float:right;">{{project.timestamp | date:"D, d-m-Y"}}</span> -->
+      </div>
+      <div class="card-body">
+        <div class="card-text">
+          <!-- <a href="{% url 'review' project_id=project.id%}" class="btn btn-info btn-block">Rate</a> -->
+        </div>
+      </div>
+    </div>
+
+      </div>
+      <!-- {% for project in projects %}
+      <img src="{{project.image.url}}"> {{project.title}} <br> {{project.description | safe}} <br>
+
+
+      <a href="{{project.link}}" target="_blank">Site</a>
+      <br>
+
+
+      <br>
+      <br> {% endfor %} -->
+      <!-- <div class="col-md-3"></div> -->
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
