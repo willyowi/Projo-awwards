@@ -1,11 +1,11 @@
-## TITLE
-INSTA
+# TITLE 
+Matuzo-Awards
 
 ## AUTHOR
 By **wilson owino** :100:
 
 ## DESCRIPTION
-A clone of the worlds famous instagram app
+An App that mimics the infamous awwwards for project posting, reviews and ratings.|You can see other peoples project and rate them as well as posting yours
 
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT(BDD)
@@ -22,11 +22,18 @@ A clone of the worlds famous instagram app
 # DISPLAY
 
 ## sign up :book:
-![screenshot](aww/static/photos/sign.png)
-<!-- ## category search 
-![screenshot](galascore/static/photos/search.png)
-## search results
-![screenshot](galascore/static/photos/messi.png) -->
+![screenshot](aww/static/photos/registration.png)
+<!-- ## Landing Page 
+### Various Projects That have been posted seen here:
+![screenshot](aww/static/photos/land.png)
+## Rate 
+### Rate a projrct that you clicked on
+![screenshot](aww/static/photos/rate.png)
+
+## Upload 
+### Upload your project for  other users
+![screenshot](aww/static/photos/upload.png) -->
+
 
 
 
@@ -109,4 +116,4 @@ None
 * Scss
 
 ## LICENSE
-[MIT](https://github.com/Willyowi/Insta/blob/master/LICENSE)
+[MIT](https://github.com/Willyowi/matuzo awards/blob/master/LICENSE)
