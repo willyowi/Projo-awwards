@@ -3,17 +3,17 @@
 {% load bootstrap4 %}
 {% block content %}
 
-<div class="container" style="margin-top:80px;">
+<div class="container" style="margin-top:80px; background-color:  rgba(231, 163, 99, 0.637)">
 
     <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-    <div class="card card-info mt-5">
+    <div class="card card-info mt-5" style="background-color: black" >
         <div class="card-header">
-            <h2>Edit Profile</h2>
+            <h2 style="color: white">Edit Profile</h2>
         </div>
         <div class="card-body">
-                <form action="{%url 'update_profile' %}" method="post" enctype="multipart/form-data">
+                <form action="{%url 'update_profile' %}" method="post" enctype="multipart/form-data" style="color: white">
                     {% csrf_token %}
                     {% bootstrap_form form %}
                     <div class="form-group">
