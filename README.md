@@ -12,7 +12,7 @@ A clone of the worlds famous instagram app
 
 | Behaviour | Input                     | Output                    |
 | --------- | ------------------------- | ------------------------- |
-| Register first | Input dtails to be validated | view the page upon registration |
+| Register first | Input details to be validated | view the page upon registration |
 | Update profile | in put profile pic and bio |  submit and view |
 | Create A post | post a pic and add description | 
 | Log Out |   | Proceedings Terminated |
