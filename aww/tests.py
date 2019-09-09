@@ -36,7 +36,7 @@ class ProfileTestClass(TestCase):
         self.assertTrue(len(profile) == 0)
             #  project test classtesting project
 class ProjectTestClass(TestCase):
-
+        #  new project
     def setUp(self):
         self.project = Project(title ='new project', image='image.url',description="awwaaards",link="http://www.awwaards.com")
 
