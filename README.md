@@ -22,17 +22,17 @@ An App that mimics the infamous awwwards for project posting, reviews and rating
 # DISPLAY
 
 ## sign up :book:
-![screenshot](aww/static/photos/registration.png)
+![screenshot](/static/photos/registration.png)
 ## Landing Page 
 ### Various Projects That have been posted seen here:
-![screenshot](aww/static/photos/land.png)
+![screenshot](/static/photos/land.png)
 ## Rate 
 ### Rate a projrct that you clicked on
-![screenshot](aww/static/photos/rate.png)
+![screenshot](/static/photos/rate.png)
 
 ## Upload 
 ### Upload your project for  other users
-![screenshot](aww/static/photos/upload.png)
+![screenshot](/static/photos/upload.png)
 
 
 
