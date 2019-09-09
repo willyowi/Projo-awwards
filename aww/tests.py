@@ -57,7 +57,7 @@ class ProjectTestClass(TestCase):
         self.project.delete_project()
         projects = Project.objects.all()
         self.assertTrue(len(projects)==0)
-
+            #   ReviewTestClass
 class ReviewTestClass(TestCase):
     def setUp(self):
         # self.project=Project(caption="test iamge",likes=1)
