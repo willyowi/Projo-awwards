@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 import datetime as dt
 from django.utils import timezone
 # Create your tests here.
+# profile test
 class ProfileTestClass(TestCase):
     #Set up Method
     def setUp(self):
