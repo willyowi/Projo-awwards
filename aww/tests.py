@@ -74,7 +74,7 @@ class ReviewTestClass(TestCase):
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_review,Review))
-
+            # save comment
     def test_save_comment(self):
         reviews = Review.objects.all()
         self.assertTrue(len(reviews)>0)
