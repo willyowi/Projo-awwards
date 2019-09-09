@@ -4,6 +4,7 @@ from tinymce.models import HTMLField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils import timezone
+import numpy as np
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
