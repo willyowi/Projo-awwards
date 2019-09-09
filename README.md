@@ -23,10 +23,10 @@ An App that mimics the infamous awwwards for project posting, reviews and rating
 
 ## sign up :book:
 ![screenshot](aww/static/photos/registration.png)
-<!-- ## Landing Page 
+## Landing Page 
 ### Various Projects That have been posted seen here:
 ![screenshot](aww/static/photos/land.png)
-## Rate 
+<!-- ## Rate 
 ### Rate a projrct that you clicked on
 ![screenshot](aww/static/photos/rate.png)
 
