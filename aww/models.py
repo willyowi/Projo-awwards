@@ -56,8 +56,7 @@ class Project(models.Model):
     profile = models.ForeignKey(Profile,null=True,on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now_add=True)
 
-    # Converted map into list after this error
-    # unsupported operand type(s) for /: ‘map’ and 'iFalse
+    
     def avg_design(self):
         design_reviews = list(map(lambda x: x.design, self.review_set.all()))
         return np.mean(design_reviews)
