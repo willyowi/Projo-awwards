@@ -120,10 +120,7 @@ class Review(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User,null=True,blank=True)
 
-    # usability =  models.PositiveIntegerField(default=0,blank=True, validators=[MaxValueValidator(10),])
-    # content =  models.PositiveIntegerField(default=0,blank=True, validators=[MaxValueValidator(10),])
-    # user =  models.PositiveIntegerField(default=0,blank=True, validators=[MaxValueValidator(10),])
-    # user = models.ForeignKey(User,null=True,blank=True)
+   
 
 
     def __str__(self):
