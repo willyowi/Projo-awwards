@@ -138,7 +138,8 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
-
+SOCIAL_AUTH_GITHUB_KEY = 'd2ec00ba1f100e4b9fc5'
+SOCIAL_AUTH_GITHUB_SECRET = '6d971b05b83813ec6922fe964f41765991dcef0b'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
