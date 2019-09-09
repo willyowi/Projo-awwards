@@ -13,15 +13,16 @@ A clone of the worlds famous instagram app
 | Behaviour | Input                     | Output                    |
 | --------- | ------------------------- | ------------------------- |
 | Register first | Input details to be validated | view the page upon registration |
-| Update profile | in put profile pic and bio |  submit and view |
-| Create A post | post a pic and add description | 
+| Update profile | in put profile pic to profile |  submit and view |
+| post a project | post a pic and add description | 
+| Rate and Review | Rate and review a projct out of ten |  scores are tabulated |
 | Log Out |   | Proceedings Terminated |
 
 
 # DISPLAY
 
 ## sign up :book:
-![screenshot](clonemain/static/photos/sign.png)
+![screenshot](aww/static/photos/sign.png)
 <!-- ## category search 
 ![screenshot](galascore/static/photos/search.png)
 ## search results
