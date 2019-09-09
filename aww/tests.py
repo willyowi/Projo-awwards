@@ -78,7 +78,7 @@ class ReviewTestClass(TestCase):
     def test_save_comment(self):
         reviews = Review.objects.all()
         self.assertTrue(len(reviews)>0)
-
+       # delete comment
     def test_delete_comment(self):
         self.new_review.save_review()
         self.new_review.delete_review()
